@@ -29,7 +29,17 @@ class Garage():
             print("Sorry the parking lot is full.")
 
     def payForParking(self):
-        pass
+        ticket_number = int(input("Scan your ticket: "))
+        if ticket_number in self.currentTicket:
+            print("Valid Ticket")
+            if self.currentTicket[ticket_number] == False:
+                print("Okay pay for your ticket")
+                self.currentTicket[ticket_number] = True
+                print("Okay new you have paid")
+            else:
+                print("Ticket has been paid, Thank you")
+        else:
+            print("Invalid Ticket")
 
     def leaveGarage(self):
         pass
@@ -39,3 +49,5 @@ class Garage():
 garage = Garage([1, 2, 3, 4,5, 6, 7, 8 , 9, 10], [1, 2, 3, 4,5, 6, 7, 8 , 9, 10])
 
 garage.takeTicket()
+garage.payForParking()
+
