@@ -1,6 +1,7 @@
 class Garage():
 
     def __init__(self, spots, tickets):
+        # rememeber to copy lists do list[:]
         self.spots = spots
         self.tickets = tickets
         self.currentTicket = {
