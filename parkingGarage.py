@@ -3,18 +3,9 @@ class Garage():
     def __init__(self, sizeOf):
         self.spots = sizeOf[:]
         self.tickets = sizeOf[:]
-        self.currentTicket = {
-            1: False,
-            2: False,
-            3: False,
-            4: False,
-            5: False,
-            6: False,
-            7: False,
-            8: False,
-            9: False,
-            10: False
-        }
+        self.currentTicket = dict()
+        for spot in self.spots:
+            self.currentTicket[spot] = False
     
     def showSpots(self):
         return "Current available spots: " + str(len(self.spots))
