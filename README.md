@@ -41,4 +41,11 @@ When the project is completed, commit the final changes, sync all pull requests,
 
 
 ###### List group responsiblities below:
+Fred: init, showSpots
+Josie: payForParking
+Stephanie: leaveGarage, run
+
 ###### Provide name and approxamite line numbers where each person wrote their code
+Fred: 1 - 13, 73 - 76
+Josie: 25 - 44, 73 - 76
+Stephanie: 45 - 71
